@@ -101,7 +101,7 @@ func wsEndpoint(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fmt.Printf("\nstarting http server...\n")
+	log.Printf("starting http server...\n")
 
 	// if we crash, we get the filename and line-number
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
